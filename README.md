@@ -54,7 +54,8 @@ This is an essential step to ensure data quality and to prepare it for effective
 For this project, the following preprocessing steps were undertaken:
 
 1. Handling Missing Values: The dataset was inspected for any missing values, particularly
-in key metrics like retweets, likes, and month of posting. Any missing entries were either filled with relevant statistical values or removed, depending on the context, to maintain data consistency.  2. Data Transformation:  ○Categorical Encoding: Categorical variables, such as months, were converted into
+in key metrics like retweets, likes, and month of posting. Any missing entries were either filled with relevant statistical values or removed, depending on the context, to maintain data consistency.  
+2. Data Transformation:  ○Categorical Encoding: Categorical variables, such as months, were converted into
 numerical format where necessary to facilitate analysis.  ○ Sentiment Scores: Where applicable, text data was processed to generate
 sentiment scores, converting qualitative expressions into quantitative metrics for
 easier comparison and visualization.  3. Feature Scaling: For metrics such as likes and retweets, normalization was applied to
