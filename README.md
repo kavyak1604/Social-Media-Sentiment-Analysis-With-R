@@ -12,5 +12,7 @@ want to determine:
 3. What relationships can we establish between retweets and other variables (month and
 likes) using linear regression?
 4. Can we predict future retweets based on historical data?
+
  This analysis aims to provide insights that could help in optimizing content strategies to enhance
 user engagement
+# Solution
