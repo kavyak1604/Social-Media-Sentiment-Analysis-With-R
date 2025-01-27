@@ -16,3 +16,16 @@ likes) using linear regression?
  This analysis aims to provide insights that could help in optimizing content strategies to enhance
 user engagement
 # Solution
+To address this problem, we used a dataset containing social media metrics, focusing on retweets
+and likes.
+
+The following steps outline our approach:
+● Data Collection
+● Data Preprocessing
+● Descriptive Statistics (Central Tendencies,Dispersion Metrics, Skewness and Kurtosis)
+● Data Visualization (Histogram, Box Plot, Scatter Plot)
+● Correlation Analysis
+● Linear Regression Analysis
+● Model Diagnostics
+● Prediction
+● Classical Tests (One-sample t-test, Two-Sample t-Test, ANOVA )
