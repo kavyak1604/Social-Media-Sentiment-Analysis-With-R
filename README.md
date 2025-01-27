@@ -67,7 +67,7 @@ The project followed these key steps:
    git clone https://github.com/kavyak1604/social-media-sentiment-analysis.git
 2.Open the project in Rstudio  
 3.Install required libraries:  
-> install.packages(c("ggplot2", "dplyr", "psych"))
+> install.packages(c("ggplot2", "dplyr", "psych"))  
 4.Run the script to analyze and visualize the data:
 > source("analysis_script.R")
 
