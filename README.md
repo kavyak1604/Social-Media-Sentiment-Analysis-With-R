@@ -77,21 +77,24 @@ This project demonstrates how data analysis and statistical techniques can uncov
 These findings can guide marketers and content creators in crafting strategies to boost audience interaction.
 
 # References
-● Data Analysis and Statistics:  
+Data Analysis and Statistics:  
 - James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical
 Learning: With Applications in R. Springer.    
-- Wickham, H., & Grolemund, G. (2017). R for Data Science. O'Reilly Media.  
-● Sentiment Analysis:  
+- Wickham, H., & Grolemund, G. (2017). R for Data Science. O'Reilly Media.
+  
+Sentiment Analysis:  
 - Liu, B. (2015). Sentiment Analysis: Mining Opinions, Sentiments, and Emotions.  
-Cambridge University Press.  
-● Regression and Correlation:  
+Cambridge University Press.
+
+Regression and Correlation:  
 - Kutner, M. H., Nachtsheim, C., & Neter, J. (2005). Applied Linear Statistical Models.  
 McGraw-Hill.  
 - Schober, P., Boer, C., & Schwarte, L. A. (2018). Correlation coefficients: Appropriate  
-use and interpretation. Anesthesia & Analgesia, 126(5), 1763-1768.  
-● Data Visualization:  
+use and interpretation. Anesthesia & Analgesia, 126(5), 1763-1768.
+ 
+Data Visualization:  
 - Wickham, H. (2016). ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag.
-- 
+  
 
 
 
