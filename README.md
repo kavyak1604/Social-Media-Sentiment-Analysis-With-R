@@ -37,3 +37,9 @@ The following steps outline our approach:
 ● Prediction
 
 ● Classical Tests (One-sample t-test, Two-Sample t-Test, ANOVA )
+# Data Collection
+We utilized a dataset containing social media metrics such as retweets, likes, the month of posting, and other features. The data was imported into R for analysis.
+
+dataset <- read.csv("C:/Users/kavya/Downloads/social_media_sentiment_dataset.csv")
+head(dataset)
+
