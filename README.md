@@ -55,7 +55,8 @@ For this project, the following preprocessing steps were undertaken:
 
 1. Handling Missing Values: The dataset was inspected for any missing values, particularly
 in key metrics like retweets, likes, and month of posting. Any missing entries were either filled with relevant statistical values or removed, depending on the context, to maintain data consistency.  
-2. Data Transformation:  ○Categorical Encoding: Categorical variables, such as months, were converted into
+2. Data Transformation:  
+ ○Categorical Encoding: Categorical variables, such as months, were converted into
 numerical format where necessary to facilitate analysis.  
 ○ Sentiment Scores: Where applicable, text data was processed to generate
 sentiment scores, converting qualitative expressions into quantitative metrics for
@@ -66,6 +67,24 @@ performance.
 4. Data Splitting: The dataset was split into training and testing sets to ensure reliable model
 evaluation. The training set was used to train the sentiment analysis model, while the
 testing set validated its accuracy and generalization.
+
+These preprocessing steps created a consistent and high-quality dataset, optimized for robust
+sentiment analysis and model training.
+# Descriptive Statistics
+Central Tendency: We calculated the mean, median, and mode of the retweet counts to
+understand the typical engagement levels.  
+mean_value <- mean(dataset$Retweets, na.rm = TRUE)  
+median_value <- median(dataset$Retweets, na.rm = TRUE)  
+mode_value <- get_mode(dataset$Retweets)  
+Dispersion Metrics: We computed the variance and standard deviation to gauge the
+variability in retweet counts.  
+> variance_value <- var(dataset$Retweets, na.rm = TRUE)  
+> sd_value <- sd(dataset$Retweets, na.rm = TRUE)  
+> variance_value  
+
+
+
+
 
 
 
