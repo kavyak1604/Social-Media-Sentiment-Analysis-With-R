@@ -1,102 +1,67 @@
-# Social-Media-Sentiment-Analysis-With-R
-# Introduction-To-R
-R is a powerful programming language and environment specifically designed for statistical computing, data analysis, and graphical visualization. 
-With its extensive library of packages, R is widely used in academia, research, and industries such as finance, healthcare, and marketing for tasks ranging from exploratory data analysis to machine learning.
-# Problem Statement
-In the era of social media, understanding audience engagement through metrics such as likes and
-retweets is crucial for content creators and marketers. The goal of this analysis is to evaluate the
-factors that influence the number of retweets and likes on social media posts. Specifically, we
-want to determine:
+# Social Media Sentiment Analysis
+
+## Overview
+In the digital era, understanding audience engagement is essential for content creators and marketers. This project analyzes factors influencing retweets and likes on social media posts using **R Programming**. By leveraging statistical methods and predictive modeling, we aim to provide actionable insights for optimizing content strategies.
+
+---
+
+## Problem Statement
+The goal of this analysis is to answer the following:
 1. What are the central tendencies (mean, median, mode) of retweets?
 2. How do variations in likes and retweets correlate?
-3. What relationships can we establish between retweets and other variables (month and
-likes) using linear regression?
+3. What relationships exist between retweets and other variables (e.g., month and likes) using linear regression?
 4. Can we predict future retweets based on historical data?
 
- This analysis aims to provide insights that could help in optimizing content strategies to enhance
-user engagement
-# Solution
-To address this problem, we used a dataset containing social media metrics, focusing on retweets
-and likes.
+---
 
-The following steps outline our approach:
-● Data Collection
+## Solution Workflow
+The project followed these key steps:
+1. **Data Collection:** Utilized a dataset containing social media metrics like retweets, likes, and month of posting.
+2. **Data Preprocessing:** Handled missing values, transformed categorical data, and normalized numerical features.
+3. **Descriptive Statistics:** Explored central tendencies, dispersion metrics, skewness, and kurtosis of retweets.
+4. **Data Visualization:** Generated histograms, box plots, and scatter plots for better understanding.
+5. **Correlation Analysis:** Evaluated the relationship between retweets and likes.
+6. **Regression Analysis:**
+   - Simple Linear Regression: Relationship between month and retweets.
+   - Multiple Linear Regression: Combined effects of likes and month on retweets.
+7. **Model Diagnostics:** Verified assumptions of regression models and identified potential outliers.
+8. **Prediction:** Forecasted retweets using trained regression models.
+9. **Classical Tests:** Conducted one-sample t-tests, two-sample t-tests, and ANOVA for deeper insights.
 
-● Data Preprocessing
+---
 
-● Descriptive Statistics (Central Tendencies,Dispersion Metrics, Skewness and Kurtosis)
+## Key Insights
+- Identified central tendencies and variability in retweets.
+- Found a strong correlation between likes and retweets.
+- Regression models revealed significant predictors of retweet engagement (likes and posting month).
+- Statistical tests showed engagement differences across months.
 
-● Data Visualization (Histogram, Box Plot, Scatter Plot)
+---
 
-● Correlation Analysis
+## Tools & Technologies
+- **Language:** R Programming
+- **Libraries:** ggplot2, dplyr, psych, stats
+- **Techniques:** Data preprocessing, regression analysis, data visualization, statistical testing
 
-● Linear Regression Analysis
+---
 
-● Model Diagnostics
+## Dataset Overview
+- **Rows:** 732
+- **Columns:** 14
+- Metrics include retweets, likes, month of posting, and other social media engagement features.
 
-● Prediction
+---
 
-● Classical Tests (One-sample t-test, Two-Sample t-Test, ANOVA )
-# Data Collection
-We utilized a dataset containing social media metrics such as retweets, likes, the month of posting, and other features. The data was imported into R for analysis.
+## Visualization Examples
+### Histogram of Retweets
+![Histogram of Retweets](path/to/image1.png)
 
-dataset <- read.csv("C:/Users/kavya/Downloads/social_media_sentiment_dataset.csv")
+### Scatter Plot: Retweets vs. Likes
+![Scatter Plot](path/to/image2.png)
 
-The dataset was imported into R for a comprehensive analysis, with preprocessing steps applied
-to transform categorical data and handle any missing values, ensuring consistency and accuracy
-in further analyses.
-# Data Preprocessing
-We converted categorical variables like Month into factors and handled any missing values.
+---
 
-dataset$Month <- as.factor(dataset$Month)
-
-This is an essential step to ensure data quality and to prepare it for effective sentiment analysis.
-For this project, the following preprocessing steps were undertaken:
-
-1. Handling Missing Values: The dataset was inspected for any missing values, particularly
-in key metrics like retweets, likes, and month of posting. Any missing entries were either filled with relevant statistical values or removed, depending on the context, to maintain data consistency.  
-2. Data Transformation:  
- ○Categorical Encoding: Categorical variables, such as months, were converted into
-numerical format where necessary to facilitate analysis.  
-○ Sentiment Scores: Where applicable, text data was processed to generate
-sentiment scores, converting qualitative expressions into quantitative metrics for
-easier comparison and visualization.  
-3. Feature Scaling: For metrics such as likes and retweets, normalization was applied to
-standardize the range and minimize the impact of outliers, thereby improving model
-performance.  
-4. Data Splitting: The dataset was split into training and testing sets to ensure reliable model
-evaluation. The training set was used to train the sentiment analysis model, while the
-testing set validated its accuracy and generalization.
-
-These preprocessing steps created a consistent and high-quality dataset, optimized for robust
-sentiment analysis and model training.
-# Descriptive Statistics
-Central Tendency: We calculated the mean, median, and mode of the retweet counts to
-understand the typical engagement levels.  
-> mean_value <- mean(dataset$Retweets, na.rm = TRUE)  
-> median_value <- median(dataset$Retweets, na.rm = TRUE)  
-> mode_value <- get_mode(dataset$Retweets)  
-
-Dispersion Metrics: We computed the variance and standard deviation to gauge the
-variability in retweet counts.  
-> variance_value <- var(dataset$Retweets, na.rm = TRUE)  
-> sd_value <- sd(dataset$Retweets, na.rm = TRUE)  
-> variance_value
-
-Skewness and Kurtosis:These metrics helped us understand the distribution shape of
-retweet data.  
-> skewness_value <- skewness(dataset$Retweets, na.rm = TRUE)  
-> kurtosis_value <- kurtosis(dataset$Retweets, na.rm = TRUE)  
-> skewness_value  
-> kurtosis_value  
-
-
-
-
-
-
-
-
-
-
-
+## How to Run the Project
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/social-media-sentiment-analysis.git
