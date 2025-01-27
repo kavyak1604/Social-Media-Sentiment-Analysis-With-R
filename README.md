@@ -41,5 +41,31 @@ The following steps outline our approach:
 We utilized a dataset containing social media metrics such as retweets, likes, the month of posting, and other features. The data was imported into R for analysis.
 
 dataset <- read.csv("C:/Users/kavya/Downloads/social_media_sentiment_dataset.csv")
-head(dataset)
+
+The dataset was imported into R for a comprehensive analysis, with preprocessing steps applied
+to transform categorical data and handle any missing values, ensuring consistency and accuracy
+in further analyses.
+# Data Preprocessing
+We converted categorical variables like Month into factors and handled any missing values.
+
+dataset$Month <- as.factor(dataset$Month)
+
+This is an essential step to ensure data quality and to prepare it for effective sentiment analysis.
+For this project, the following preprocessing steps were undertaken:
+
+1. Handling Missing Values: The dataset was inspected for any missing values, particularly
+in key metrics like retweets, likes, and month of posting. Any missing entries were either filled with relevant statistical values or removed, depending on the context, to maintain data consistency.  2. Data Transformation:  ○Categorical Encoding: Categorical variables, such as months, were converted into
+numerical format where necessary to facilitate analysis.  ○ Sentiment Scores: Where applicable, text data was processed to generate
+sentiment scores, converting qualitative expressions into quantitative metrics for
+easier comparison and visualization.  3. Feature Scaling: For metrics such as likes and retweets, normalization was applied to
+standardize the range and minimize the impact of outliers, thereby improving model
+performance.  4. Data Splitting: The dataset was split into training and testing sets to ensure reliable model
+evaluation. The training set was used to train the sentiment analysis model, while the
+testing set validated its accuracy and generalization.
+
+
+
+
+
+
 
