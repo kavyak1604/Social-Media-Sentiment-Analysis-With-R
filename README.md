@@ -73,14 +73,22 @@ sentiment analysis and model training.
 # Descriptive Statistics
 Central Tendency: We calculated the mean, median, and mode of the retweet counts to
 understand the typical engagement levels.  
-mean_value <- mean(dataset$Retweets, na.rm = TRUE)  
-median_value <- median(dataset$Retweets, na.rm = TRUE)  
-mode_value <- get_mode(dataset$Retweets)  
+> mean_value <- mean(dataset$Retweets, na.rm = TRUE)  
+> median_value <- median(dataset$Retweets, na.rm = TRUE)  
+> mode_value <- get_mode(dataset$Retweets)  
+
 Dispersion Metrics: We computed the variance and standard deviation to gauge the
 variability in retweet counts.  
 > variance_value <- var(dataset$Retweets, na.rm = TRUE)  
 > sd_value <- sd(dataset$Retweets, na.rm = TRUE)  
-> variance_value  
+> variance_value
+
+Skewness and Kurtosis:These metrics helped us understand the distribution shape of
+retweet data.  
+> skewness_value <- skewness(dataset$Retweets, na.rm = TRUE)  
+> kurtosis_value <- kurtosis(dataset$Retweets, na.rm = TRUE)  
+> skewness_value  
+> kurtosis_value  
 
 
 
