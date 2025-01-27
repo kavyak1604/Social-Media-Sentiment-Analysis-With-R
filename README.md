@@ -54,14 +54,27 @@ The project followed these key steps:
 
 ## Visualization Examples
 ### Histogram of Retweets
-![Histogram of Retweets](path/to/image1.png)
+![Histogram of Retweets]("C:\Users\kavya\OneDrive\Desktop\r programming\Rplot01.png")
 
 ### Scatter Plot: Retweets vs. Likes
-![Scatter Plot](path/to/image2.png)
+![Scatter Plot]("C:\Users\kavya\OneDrive\Desktop\r programming\Rplot02.png")
 
 ---
 
 ## How to Run the Project
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/social-media-sentiment-analysis.git
+   git clone https://github.com/kavyak1604/social-media-sentiment-analysis.git
+2.Open the project in Rstudio  
+3.Install required libraries:  
+> install.packages(c("ggplot2", "dplyr", "psych"))
+4.Run the script to analyze and visualize the data:
+> source("analysis_script.R")
+
+# Conclusion
+This project demonstrates how data analysis and statistical techniques can uncover meaningful insights into social media engagement.  
+These findings can guide marketers and content creators in crafting strategies to boost audience interaction.
+
+
+
+
